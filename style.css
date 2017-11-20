@@ -34,14 +34,14 @@ body {
     text-align: center;
     font-weight:bold;
     letter-spacing: 1px;
-    padding:40px 40px;
+    padding: 40px 40px;
 }
 
 .navbar-default .navbar-nav>li>a {
     color: #1c1c1c;
-    padding-top:50px;
-    font-size:16px;
-    margin-left:10px;
+    padding-top: 50px;
+    font-size: 16px;
+    margin-left: 10px;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -113,5 +113,76 @@ footer {
     text-align:center;
     z-index: 3;
     padding-top:5px;
+}
+
+@media screen and (max-width:992px) {
+	.navbar {
+		border-radius: 0px;
+	}
+
+	.navbar-right {
+		margin-right:-40px;
+	}
+
+	.container-fluid {
+		width: 960px;
+	}
+
+	#myPhoto {
+		width:40%;
+	}
+
+	#myBio {
+		line-height:1.75;
+	}
+	
+	.content{
+		width:66.6%;
+	}
+	.connect {
+		width: 30%;
+	}
+
+	.icon {
+		width: 40px;
+		margin-right: 10px;
+	}
+}
+
+
+
+@media screen and (max-width:768px) {
+	.navbar {
+		border-radius: 0px;
+	}
+
+	.navbar-right {
+		margin-right:-40px;
+	}
+
+	.container-fluid {
+		width: 728px;
+	}
+
+	#myPhoto {
+		width:40%;
+	}
+
+	#myBio {
+		line-height:1.75;
+	}
+	
+	.content{
+		width: 100%;
+	}
+	.connect {
+		width: 100%;
+		margin-top:20px;
+	}
+
+	.icon {
+		width: 70px;
+		margin-right: 10px;
+	}
 }
 
