@@ -1,0 +1,117 @@
+body {
+	font-family:Montserrat, 'Arial', 'Sans-serif';
+	background-image:url(images/debut_dark.png);
+	box-sizing:border-box;
+}
+
+/* Header / Navbar */
+.container-fluid {
+	width:960px;
+	height:100px;
+}
+
+.navbar {
+	border:0px;
+}
+
+.navbar-default {
+	border-color: #fff;
+	background-color:#fff;
+	position:relative;
+	z-index:1;
+}
+
+.navbar-default .navbar-brand {
+    color: #1c1c1c;
+}
+
+.navbar-brand {
+	background-color: #F7CA18;
+	height: 90px;
+    position: absolute;
+    bottom: 0;
+    font-size: 2.25em;
+    text-align: center;
+    font-weight:bold;
+    letter-spacing: 1px;
+    padding:40px 40px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #1c1c1c;
+    padding-top:50px;
+    font-size:16px;
+    margin-left:10px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #F7CA18;
+}
+
+
+/* Content / Connect */
+
+.content-row {
+	margin-top:10px;
+	float:left;
+}
+
+.content {
+	background-color: #fff;
+	position:relative;
+	padding: 20px;
+	margin-right:20px;
+	float:left;
+}
+
+#content-title {
+	font-size: 1.75em;
+	margin-bottom:-10px;
+	letter-spacing:1px;
+	color:#1c1c1c;
+}
+
+#myPhoto {
+	float:left;
+	width: 20%;
+	margin: 0px 20px 10px 0px;
+}
+
+#myBio {
+	font-size:1.15em;
+	line-height: 1.5;
+	font-weight: 200;
+	margin-bottom: 40px;
+}
+
+.connect {
+	clear:right;
+	background-color: #fff;
+	float:right;
+	width:30%;
+	padding: 20px 20px;
+}
+
+
+.icon {
+	width: 50px;
+	margin-right:5px;
+}
+
+/* Footer */
+footer {
+	background-color: #fff;
+    clear: both;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    border-top-color: #F7CA18;
+    border-top-style: solid;
+    border-top-width: 5px;
+    text-align:center;
+    z-index: 3;
+    padding-top:5px;
+}
+
