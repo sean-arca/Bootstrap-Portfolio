@@ -50,6 +50,17 @@ body {
     color: #F7CA18;
 }
 
+.navbar-ex1-collapse {
+	background-color: #fff;
+	z-index:3;
+}
+
+button.navbar-toggle {
+	position:relative;
+	top: 25px;
+	right: 10px;
+}
+
 
 /* Content / Connect */
 
@@ -58,7 +69,7 @@ body {
 	float:left;
 }
 
-.content {
+.content, .contact-content {
 	background-color: #fff;
 	position:relative;
 	padding: 20px;
@@ -86,7 +97,7 @@ body {
 	margin-bottom: 40px;
 }
 
-.connect {
+.connect, .contact-connect {
 	clear:right;
 	background-color: #fff;
 	float:right;
@@ -139,6 +150,12 @@ footer {
 		margin-right:-40px;
 	}
 
+/*	.navbar-default .navbar-nav>li>a:; {
+    padding: 10px 50px 20px 0;
+    font-size: 16px;
+    text-align: right;
+}*/
+
 	.container-fluid {
 		width: 90%;
 	}
@@ -154,10 +171,22 @@ footer {
 	.content{
 		width: 100%;
 	}
+
+	.contact-content {
+		width: 100%;
+	}
+
 	.connect {
 		width: 100%;
 		margin-top:20px;
 		margin-bottom: 60px;
+	}
+
+	.contact-connect {
+		float:left;
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 50px;
 	}
 
 	.icon {
@@ -179,28 +208,48 @@ footer {
 		width: 95%;
 	}
 
+	.content-row {
+		width: 730px;
+	}
+
 	#myPhoto {
 		width:35%;
 	}
 	
-	.content{
-		width: 62%;
+	.content {
+		width: 63%;
 		padding-bottom: 0px;
 	}
-	.connect {
-		width: 35%;
+
+	.contact-content {
+		width: 63%;
+		padding-bottom: 30px;
+		margin-bottom: 50px;
+	}
+
+	.connect, .contact-connect {
+		width: 34%;
 		margin-top:0px;
 	}
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+	.content-row {
+		width: 946px;
+	}
+
 	#myPhoto {
 		margin-bottom: 0px;
 	}
 
 	.icon {
 		width: 60px;
+	}
+
+	.contact-connect {
+		margin-left: 8px;
 	}
 }
 
@@ -210,7 +259,11 @@ footer {
 		width: 94%;
 	}
 
-	.content {
+	.content-row {
+		width: 1136px;
+	}
+
+	.content, .contact-content {
 		width:69%;
 	}
 	
@@ -218,12 +271,26 @@ footer {
 		width: 30%;
 	}
 
-	.connect {
+	.connect, .contact-connect {
 		width:28%;
+	}
+
+	.contact-connect {
+		margin-left: 14px;
 	}
 
 	.icon {
 		width: 50px;
+	}
+}
+
+@media only screen and (min-width : 1366px) {
+	.content-row {
+		width: 100%;
+	}
+
+	#myPhoto {
+		width: 23%;
 	}
 }
 
