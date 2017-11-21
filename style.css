@@ -5,6 +5,7 @@ body {
 }
 
 /* Header / Navbar */
+
 .container-fluid {
 	width:960px;
 	height:100px;
@@ -12,6 +13,7 @@ body {
 
 .navbar {
 	border:0px;
+	border-radius: 0px;
 }
 
 .navbar-default {
@@ -92,10 +94,24 @@ body {
 	padding: 20px 20px;
 }
 
-
 .icon {
 	width: 50px;
 	margin-right:5px;
+}
+
+.input-group {
+	position:relative;
+	width: 100%;
+}
+
+.form-control {
+	border-radius: 0px;
+}
+
+#submit {
+	background-color:#F7CA18;
+	border-radius: 0px;
+	border: 0px;
 }
 
 /* Footer */
@@ -115,57 +131,20 @@ footer {
     padding-top:5px;
 }
 
-@media screen and (max-width:992px) {
-	.navbar {
-		border-radius: 0px;
-	}
+/*==========  Mobile First Method  ==========*/
 
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
 	.navbar-right {
 		margin-right:-40px;
 	}
 
 	.container-fluid {
-		width: 960px;
+		width: 90%;
 	}
 
 	#myPhoto {
-		width:40%;
-	}
-
-	#myBio {
-		line-height:1.75;
-	}
-	
-	.content{
-		width:66.6%;
-	}
-	.connect {
-		width: 30%;
-	}
-
-	.icon {
-		width: 40px;
-		margin-right: 10px;
-	}
-}
-
-
-
-@media screen and (max-width:768px) {
-	.navbar {
-		border-radius: 0px;
-	}
-
-	.navbar-right {
-		margin-right:-40px;
-	}
-
-	.container-fluid {
-		width: 728px;
-	}
-
-	#myPhoto {
-		width:40%;
+		width:100%;
 	}
 
 	#myBio {
@@ -178,11 +157,74 @@ footer {
 	.connect {
 		width: 100%;
 		margin-top:20px;
+		margin-bottom: 60px;
 	}
 
 	.icon {
+		float: left;
 		width: 70px;
 		margin-right: 10px;
+		margin-bottom: 20px;
+	}	
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.container-fluid {
+		width: 95%;
+	}
+
+	#myPhoto {
+		width:35%;
+	}
+	
+	.content{
+		width: 62%;
+		padding-bottom: 0px;
+	}
+	.connect {
+		width: 35%;
+		margin-top:0px;
 	}
 }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	#myPhoto {
+		margin-bottom: 0px;
+	}
+
+	.icon {
+		width: 60px;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.container-fluid {
+		width: 94%;
+	}
+
+	.content {
+		width:69%;
+	}
+	
+	#myPhoto {
+		width: 30%;
+	}
+
+	.connect {
+		width:28%;
+	}
+
+	.icon {
+		width: 50px;
+	}
+}
+
 
